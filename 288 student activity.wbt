@@ -1,0 +1,43 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/OsbWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR5e.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.18331372109047606 -0.08287677839061529 0.9795547556229596 3.975393826059239
+  position 4.3438587287203285 2.860016833771013 1.459301105096892
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 3
+  floorAppearance OsbWood {
+  }
+}
+WoodenBox {
+  translation 1.5 -0.4 0.3
+}
+UR5e {
+  hidden position_0_0 -9.541517607117818e-05
+  hidden rotation_1 0 0 -1 9.541517791907362e-05
+  hidden position_1_0 5.717736411410434e-05
+  hidden rotation_2 0 1 0 1.5709103523818393
+  hidden position_2_0 1.5863406992131098e-05
+  hidden rotation_3 0 1 0 3.826999988834464e-05
+  hidden position_3_0 -6.530390307624145e-06
+  hidden rotation_4 0 1 0 1.5707894936884583
+  hidden position_4_0 4.110315478502031e-07
+  hidden rotation_5 0 0 1 4.107966647175028e-07
+  hidden position_5_0 -4.1141856854665093e-07
+  hidden rotation_6 0 -1 0 4.1187628987685676e-07
+  translation 1.5 -0.4 0.6
+  controller "OneArm"
+}
